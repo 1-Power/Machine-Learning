@@ -26,8 +26,5 @@ if( $OutputVariable -eq "main" ) {
 #     Write-Host("Please try Again") 
 # }
 
-# Running the NodeJs server.
-Write-Host("Running Node JS Serve");
-npm start
 
 
