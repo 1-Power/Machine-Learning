@@ -14,11 +14,11 @@ if( $OutputVariable -eq "main" ) {
     
 } else 
 {
-    Write-Host("Not on master, it's the Development Branch");
+    Write-Host("Not on master, it's the Learning Branch");
     Write-Host("Running git commands");
     git status
     git add * 
-    git commit -m 'Updating Files in Development Branch'
+    git commit -m 'Updating Files in Learning  Branch'
     git push
 }
 # else {
