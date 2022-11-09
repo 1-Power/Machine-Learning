@@ -15,24 +15,27 @@ if( $OutputVariable -eq "main" ) {
     
     Write-Host("
     -----------------------------
-         Git Status: Files
+            Git Status
     -----------------------------");
-    # Checking the Current Status
-    $Status = (git status) | Out-String
+    git status
     Write-Host("
     -----------------------------
-        Modified Files
+    getting Files from Main Repo
     -----------------------------
     ");
-    Write-Host ($Status)
-    #git status
-    # Getting from the main remote repo
     git pull 
 
 } else 
 {
-    Write-Host("Not on master, it's the Learning Branch");
-    Write-Host("Running git commands");
+    Write-Host("
+    ----------------------------------------
+    Not on master, it's the Learning Branch
+    ----------------------------------------");
+    Write-Host("
+    --------------------
+    Running git commands
+    --------------------
+    ");
     git status
     git add * 
     git commit -m 'Updating Files in Learning  Branch'
