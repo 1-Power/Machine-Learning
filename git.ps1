@@ -18,13 +18,13 @@ if( $OutputVariable -eq "main" ) {
          Git Status: Files
     -----------------------------");
     # Checking the Current Status
-    $StatusVariable = (git status) | Out-String
+    $Status = (git status) | Out-String
     Write-Host("
     -----------------------------
         Modified Files
     -----------------------------
     ");
-    Write-Output $StatusVariable
+    Write-Host ($Status)
     #git status
     # Getting from the main remote repo
     git pull 
