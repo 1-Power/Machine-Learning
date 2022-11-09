@@ -9,32 +9,31 @@ $OutputVariable = (git branch --show-current) | Out-String
 # Checking the branch using git command
 if( $OutputVariable -eq "main" ) {
     Write-Host("
-    -----------------------------
-           On Main Branch
-    -----------------------------");
+-----------------------------
+	 On Main Branch
+-----------------------------");
     
     Write-Host("
-    -----------------------------
-            Git Status
-    -----------------------------");
+-----------------------------
+	Git Status
+-----------------------------");
     git status
     Write-Host("
-    -----------------------------
-    getting Files from Main Repo
-    -----------------------------
-    ");
+-------------------------------------
+Getting Lates Main Branch Fetch File
+-------------------------------------");
     git pull 
 
 } else 
 {
     Write-Host("
-    ----------------------------------------
-    Not on master, it's the Learning Branch
-    ----------------------------------------");
+--------------------------------------------------
+	Not on master, it's the Learning Branch
+--------------------------------------------------");
     Write-Host("
-    --------------------
-    Running git commands
-    --------------------
+---------------------------------
+	Running git commands
+---------------------------------
     ");
     git status
     git add * 
