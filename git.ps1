@@ -37,6 +37,6 @@ Getting Lates Main Branch Fetch File
     ");
     git status
     git add * 
-    git commit -m 'Updating Files in Learning  Branch'
+    git commit -m 'Linear Regiression'
     git push
 }
