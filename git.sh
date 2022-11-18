@@ -8,7 +8,7 @@ output=$(git branch --show-current)
 
 # echo "Current Branch: $output"
 
-if [[$output -eq "main"]]
+if [["$output" == "main"]]
 then 
     echo "
 ------------------------------------------------
