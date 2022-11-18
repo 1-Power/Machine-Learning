@@ -5,7 +5,9 @@ echo "
 ---------------------------------------------------------
 "
 output=$(git branch --show-current)
+
 # echo "Current Branch: $output"
+
 if [[$output == "main"]]
 then 
     echo "
