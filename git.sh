@@ -23,6 +23,12 @@ else
 ------------------------------------------------------------"
 
     git add *
-    git commit -m "Machine Learning Model"
-    git push
+    echo -ne "
+--------------------------------------------------------------
+        ---Enter your Commit Message ---
+-------------------------------------------------------------
+    "
+    read -p "The Message:" commit_message
+    git commit -m "$commit_message"
+    git push 
 fi
