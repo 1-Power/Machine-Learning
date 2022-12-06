@@ -6,7 +6,11 @@ echo "
 "
 output=$(git branch --show-current)
 
-# echo "Current Branch: $output"
+echo "
+-----------------------------------------
+Current Branch: $output
+----------------------------------------"
+
 
 if [ "$output" = "main" ];then 
     echo "
@@ -23,6 +27,12 @@ else
 ------------------------------------------------------------"
 
     git add *
-    git commit -m "Machine Learning Model"
-    git push
+    echo -ne "
+--------------------------------------------------------------
+        ---Enter your Commit Message ---
+-------------------------------------------------------------
+    "
+    read -p "The Message:" commit_message
+    git commit -m "$commit_message"
+    git push 
 fi
